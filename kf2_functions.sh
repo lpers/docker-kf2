@@ -1,3 +1,4 @@
+#!/bin/bash
 function require_steamcmd() {
     # Download/extract steam
     mkdir -p "${HOME}/steam/downloads"
