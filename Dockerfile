@@ -1,8 +1,8 @@
-FROM ubuntu:xenial
+FROM ubuntu:20.04
 
 RUN \
 	apt-get -y update && \
-	apt-get -y install wget lib32gcc1 && \
+	apt-get -y install wget lib32gcc1 libcur14 && \
 	apt-get clean && \
 	find /var/lib/apt/lists -type f | xargs rm -vf
 
